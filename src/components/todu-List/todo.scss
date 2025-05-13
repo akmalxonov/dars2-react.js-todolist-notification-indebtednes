@@ -1,0 +1,26 @@
+.all {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 60px;
+    .form {
+        display: flex;
+        align-items: start;
+        width: 800px;
+        margin: auto;
+
+        .input {
+            width: 100%;
+        }
+
+        button {
+            width: 20%;
+        }
+    }
+
+    .list {
+        width: 800px;
+        margin: auto;
+    }
+}

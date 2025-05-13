@@ -1,0 +1,10 @@
+.paid{
+    width: 30%;
+    border: 1px solid black;
+    padding: 15px;
+    .price{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+}
