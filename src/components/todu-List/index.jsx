@@ -8,15 +8,16 @@ import Paid from '../paid';
 import Unpaid from '../unpaid';
 const TodoList = () => {
     const dispatch = useDispatch();
-    const { data } = useSelector((state) => state.indebtednessReducer);     // todo ro‘yxati
-    const [form] = Form.useForm();  // Formani boshqarish uchun hook
-    // Submit bosilganda chaqiriladigan funksiya
+    const { data } = useSelector((state) => state.indebtednessReducer);
+    const [form] = Form.useForm(); 
+
     const submit = (e) => {
         dispatch(getData(e)); 
         console.log(e);
          e.number = Number(e.number);   
         form.resetFields();       
     };
+    
     return (
         <div className='all'>
             <Unpaid/>

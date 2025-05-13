@@ -9,7 +9,6 @@ const timerSlice = createSlice({
   reducers: {
     start: (state) => {
       state.running = true;
-      state.time += 1;
     },
     stop: (state) => {
       state.running = false;
